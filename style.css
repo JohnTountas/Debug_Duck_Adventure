@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: "Courier New", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.game-container {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #08f408;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+}
+
+.duck {
+  font-size: 60px;
+  margin: 20px 0;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.terminal {
+  background: #000;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0;
+  text-align: left;
+  font-size: 14px;
+  min-height: 100px;
+  overflow-y: auto;
+}
+
+.terminal-line {
+  margin: 5px 0;
+}
+
+.prompt {
+  color: #00ff00;
+}
+
+.error {
+  color: #ff4444;
+}
+
+.success {
+  color: #44ff44;
+}
+
+.warning {
+  color: #ffaa44;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  background: #333;
+  border: 1px solid #555;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Courier New", monospace;
+}
+
+button {
+  padding: 10px 20px;
+  background: #00ff00;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #00cc00;
+  transform: scale(1.05);
+}
+
+.hints {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 0, 0.1);
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.score {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: #00ff00;
+}
+
+.celebration {
+  animation: celebrate 1s ease-in-out;
+}
+
+@keyframes celebrate {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}

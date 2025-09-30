@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Debug Duck Adventure</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="score">Bugs Fixed: <span id="score">0</span></div>
+      <h1>🦆 Debug Duck Adventure 🦆</h1>
+      <div class="duck" id="duck">🦆</div>
+      <p>
+        Help Debug Duck fix the bugs in the code! Type JavaScript commands to
+        solve each challenge.
+      </p>
+
+      <div class="terminal" id="terminal">
+        <div class="terminal-line prompt">
+          $ Welcome to Debug Duck's Terminal!
+        </div>
+        <div class="terminal-line">
+          Debug Duck says: "Quack! Let's squash some bugs!"
+        </div>
+        <div class="terminal-line warning">
+          Current Bug: undefined variable 'x' - try declaring it!
+        </div>
+      </div>
+
+      <div class="input-area">
+        <input
+          type="text"
+          id="command"
+          placeholder="Enter JavaScript command..."
+        />
+        <button onclick="executeCommand()">Execute</button>
+      </div>
+
+      <div class="hints">
+        <strong><h4>Hints:</h4></strong> Try commands like: var x = 5; |
+        console.log("hello"); | function test() {} | duck.quack()
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
