@@ -1,4 +1,4 @@
-## Debug Duck Adventure Project
+## Duck the Bug
 
 ### A funny Code Debug Game.!
 
